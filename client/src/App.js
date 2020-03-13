@@ -40,13 +40,6 @@ const App = () => {
 					<Card key={project.id}>
 						<h2>{project.name}</h2>
 						<p>{project.description}</p>
-						{project.completed ? (
-							<button onClick={() => setStatus(!project.completed)}>
-								Completed
-							</button>
-						) : (
-							<button>Need to do</button>
-						)}
 					</Card>
 				))}
 			</Container>
